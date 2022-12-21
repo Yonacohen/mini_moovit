@@ -13,6 +13,7 @@ s6=Station1.Station('G',Position1.Position(25,11))
 s7=Station1.Station('H',Position1.Position(23,13))
 s8=Station1.Station('I',Position1.Position(66,55))
 s9=Station1.Station('J',Position1.Position(85,44))
+s10=Station1.Station('K',Position1.Position(55,38))
 
 
 list_station = [s0,s1,s2,s3,s4,s5,s6,s7,s8,s9]
