@@ -22,10 +22,10 @@ class Busses:
 
 
     def print_route(self):
-        print("The busses that pass by the station :  " , end = " ")
+        print("The busses that pass by the station: " , end = " ")
 
         for x in self.route:
-            print (x.id_station,",", end="  ")
+            print (x.id_station , ",", end="  ")
         print("")
         print("")
 

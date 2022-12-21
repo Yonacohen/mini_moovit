@@ -16,21 +16,24 @@ s9=Station1.Station('J',Position1.Position(85,44))
 s10=Station1.Station('K',Position1.Position(55,38))
 
 
-list_station = [s0,s1,s2,s3,s4,s5,s6,s7,s8,s9]
+list_station = [s0,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10]
 
 
 
                        #kav,route[]
 b1=Busses1.Busses(1,[list_station[3],list_station[5],list_station[7],list_station[9]])
-b2=Busses1.Busses(2,[list_station[5],list_station[6],list_station[9]])
+b2=Busses1.Busses(2,[list_station[5],list_station[6],list_station[9],list_station[10]])
 b3=Busses1.Busses(3,[list_station[0],list_station[3],list_station[6],list_station[7],list_station[9]])
 b4=Busses1.Busses(4,[list_station[1],list_station[2],list_station[7],list_station[9]])
-b5=Busses1.Busses(5,[list_station[4],list_station[5],list_station[8],list_station[9]])
+b5=Busses1.Busses(5,[list_station[4],list_station[5],list_station[8],list_station[9],list_station[10]])
 b6=Busses1.Busses(6,[list_station[1],list_station[2],list_station[3],list_station[4],list_station[5],list_station[6]])
+b7=Busses1.Busses(7,[list_station[3],list_station[5],list_station[8],list_station[9],list_station[10]])
+b8=Busses1.Busses(8,[list_station[10],list_station[9],list_station[3],list_station[9],list_station[1]])
 
 
 
-list_busses = [b1,b2,b3,b4,b5,b6]
+
+list_busses = [b1,b2,b3,b4,b5,b6,b7,b8]
 
 
 for b in list_busses:

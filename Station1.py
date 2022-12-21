@@ -15,15 +15,13 @@ class Station:
          (self.pos).print_pos()
 
     def print_busses_in_station(self):
-        print("The buses that pass by this " , self.id_station,"station" )
+        print("The buses that pass by this" , self.id_station,"station:" )
         for x in self.busses_number:
             print(x,end = " : ")
         print("")
 
     def add_bus(self,new_bus_num):
-
         self.busses_number.append(new_bus_num)
-
 
     def delete_bus(self,delete_bus):
         self.busses_number.remove(delete_bus)
