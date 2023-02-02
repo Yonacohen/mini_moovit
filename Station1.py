@@ -2,7 +2,7 @@ import Position1
 class Station:
     def __init__(self, id_station, pos):
         self.id_station = id_station
-        self.                                     = []              #buss list
+        self.busses_number = []              #buss list
         self.pos = pos
 
     def calc_dist(self,s2):
