@@ -1,3 +1,5 @@
+
+import networkx as nx
 import Busses1
 import Position1
 import Station1
@@ -17,7 +19,22 @@ s10=Station1.Station('K',Position1.Position(55,38))
 
 
 list_station = [s0,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10]
+#add node to graph
+G = nx.Graph()
+for add in list_station:
+    G.add_node(add)
 
+
+G.add_weighted_edges_from([(s0, s1, s0.calc_dist(s1)),
+                           (s1,s2,s1.calc_dist(s2)),
+                           (s1, s3,s1.calc_dist(s3)),
+                           (s0, s3, s0.calc_dist(s3),
+                            )])
+
+arrStations = nx.dijkstra_path(G, s0, s3)
+print('frrrrrrrrrrrrrrrrrrrrrrrrrrrrr')
+for x in arrStations:
+     x.print_station()
 
 
                        #kav,route[]
@@ -41,6 +58,24 @@ for b in list_busses:
 
 for s in list_station:
     s.print_busses_in_station()
+
+
+p0=Position1.Position(0,0)
+p1=Position1.Position(3,2)
+p2=Position1.Position(6,4)
+p3=Position1.Position(9,6)
+p4=Position1.Position(12,80)
+p5=Position1.Position(15,10)
+p6=Position1.Position(18,12)
+p7=Position1.Position(21,14)
+
+list_pos=[p0,p1,p2,p3,p4,p5,p6,p7]
+
+
+for p in list_pos:
+    p.print_pos()
+
+
 
 
 

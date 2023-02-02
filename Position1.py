@@ -1,5 +1,5 @@
 import math
-class Position():
+class Position:
 
     def __init__(self, x, y):
         self.x = x
@@ -11,7 +11,8 @@ class Position():
         return math.sqrt(x + y)
 
     def print_pos(self):
-        print("The location is " , self.x , self.y)
+        print("The location is " , self.x ,",", self.y)
+
 
 
 
